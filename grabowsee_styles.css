@@ -216,6 +216,15 @@ footer {
     font-size: 0.8rem;
     color: #333;
     z-index: 10; /* stays on top of other elements */
+    box-sizing: border-box; /* Add this to include padding in width calculation */
+}
+
+.copyright {
+    font-size: 12px;
+    max-width: 100%; /* Ensure text doesn't exceed container width */
+    overflow-wrap: break-word; /* Allow long words to break */
+    word-wrap: break-word; /* Legacy support */
+    margin: 0 auto; /* Center the text */
 }
 
 /* The Modal background */
@@ -258,7 +267,26 @@ footer {
     cursor: pointer;
   }
   
-
+  .floating-button {
+    position: fixed; /* Fixes the button to the screen */
+    font-size: 12px;
+    bottom: 100px; /* Position it from the bottom */
+    right: 30px; /* Position it from the right */
+    padding: 10px 20px; /* Adds padding around the text */
+    background-color: rgba(128, 0, 128, 0.5); /* Purple with 50% opacity */
+    color: white; /* Text color */
+    font-weight: bold;
+    border-radius: 3px; /* Rounded corners */
+    text-decoration: none; /* Removes the underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .floating-button:hover {
+    background-color: #ff6f61; /* Hover color */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .top-header {
@@ -274,6 +302,30 @@ footer {
     h1 {
         font-size: 1.5rem;
     }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+        width: auto; /* Remove fixed width */
+        padding: 0 5px; /* Add some padding */
+    }
+
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem; /* Slightly smaller for mobile */
+        padding: 6px 10px; /* Reduce padding further */
+    }
+
+    .copyright {
+        font-size: 0.7rem; 
+        padding: 0 5px;
+        width: auto; /* Remove the 10% width that was causing issues */
 }
 
 
