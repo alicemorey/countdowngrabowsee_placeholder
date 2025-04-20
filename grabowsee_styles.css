@@ -174,8 +174,8 @@ h1 {
 /* Style each image box */
 .archive-item img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    height: 180px;
+    border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -313,6 +313,14 @@ footer {
         width: auto; /* Remove fixed width */
         padding: 0 5px; /* Add some padding */
     }
+    .modal-content {
+        max-width: 90%; /* Adjust image width to 90% of screen size */
+        max-height: 70vh; /* Limit height on smaller screens */
+      }
+    
+      .caption {
+        font-size: 12px; /* Smaller font size for better readability */
+      }
 
 }
 
@@ -326,6 +334,17 @@ footer {
         font-size: 0.7rem; 
         padding: 0 5px;
         width: auto; /* Remove the 10% width that was causing issues */
+}
+
+.modal-content {
+    max-width: 95%; /* Even smaller width for very small screens */
+    max-height: 60vh; /* Adjust height for even smaller devices */
+  }
+
+  .caption {
+    font-size: 12px; /* Keep the smaller font size */
+    padding: 5px; /* Adjust padding to fit better */
+  }
 }
 
 
