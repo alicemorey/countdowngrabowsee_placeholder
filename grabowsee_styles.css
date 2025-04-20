@@ -1,0 +1,155 @@
+body {
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    min-height: 75vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul a{
+    text-decoration: none;
+    color: purple;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color:red;
+}
+
+header.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Logo styling */
+.logo-link {
+    display: inline-block;
+    
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Heading styling */
+h1 {
+    margin: 0; /* Remove default margins */
+    font-size: 1.8rem; /* Adjust size as needed */
+}
+
+/* Navigation menu container */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Ensure it's column */
+    align-items: center;     /* Center everything horizontally */
+}
+
+/* Navigation menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* Base logo link styling */
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    position: relative;
+}
+
+/* Remove default focus styles */
+.logo-link:focus {
+    outline: none;
+}
+
+/* Animation for when the logo is clicked */
+.logo-link:active img.logo {
+    filter: hue-rotate(180deg) saturate(2) brightness(1.2); /* More vibrant color change */
+    transform: translateY(8px) rotate(10deg); /* More pronounced movement */
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+
+/* Reset after click */
+.logo-link img.logo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Optional hover effect */
+.logo-link:hover img.logo {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Add emojis based on href attribute */
+.nav-menu a[href="about.html"]::before {
+    content: "🔍 ";
+}
+
+.nav-menu a[href="contact.html"]::before {
+    content: "✉️ ";
+}
+
+.nav-menu a[href="opencall.html"]::before {
+    content: "🎨 ";
+}
+
+.nav-menu a[href="archive.html"]::before {
+    content: "📦 ";
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-link {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
