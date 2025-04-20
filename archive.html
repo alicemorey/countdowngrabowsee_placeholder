@@ -13,7 +13,6 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/GRABOWLOGO_blue.png">
         <link rel="preload" href="script.min.js" as="script"> 
         <link rel="stylesheet" href="grabowsee_styles.css">
-        <script src="script.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     </head>
     <body>
@@ -33,17 +32,24 @@
                 <h2>2024</h2>
             </div>
             <div class="archive-grid">
-                <div class="archive-item">
-                    <img src="images/archive2024/2024_179.jpg" alt="">
-                </div>
-                <div class="archive-item">
+                
+                <div class="archive-item" onclick="openModal('images/archive2024/2024_42.jpg', 'work by Scott Carver & Ebb Bayley')">
                     <img src="images/archive2024/2024_42.jpg" alt="">
                 </div>
-              <div class="archive-item">
+              <div class="archive-item" onclick="openModal('images/archive2024/2024_188.jpg', 'work by Mathilde Heuliez')">
                 <img src="images/archive2024/2024_188.jpg" alt="">
                 </div>
+                <div class="archive-item" onclick="openModal('images/archive2024/2024_13.jpg', '')">
+                    <img src="images/archive2024/2024_13.jpg" alt="">
+                </div>
+                <div class="archive-item" onclick="openModal('images/archive2024/2024_54.jpg', '')">
+                    <img src="images/archive2024/2024_54.jpg" alt="">
+                </div>
+                <div class="archive-item" onclick="openModal('images/archive2024/2024_179.jpg', 'work by Rob Blake')">
+                    <img src="images/archive2024/2024_179.jpg" alt="Archive image">
+                </div>
                 <div class="archive-item">
-                    <img src="images/archive2024/2024_179.jpg" alt="">
+                    <img src="images/archive2024/2024_20.jpg" alt="">
                 </div>
                 <div class="archive-item">
                     <img src="images/archive2024/2024_179.jpg" alt="">
@@ -63,15 +69,17 @@
                 <div class="archive-item">
                     <img src="images/archive2024/2024_179.jpg" alt="">
                 </div>
-                <div class="archive-item">
-                    <img src="images/archive2024/2024_179.jpg" alt="">
-                </div>
-                <div class="archive-item">
-                    <img src="images/archive2024/2024_179.jpg" alt="">
-                </div>
+
+                <!-- Modal (hidden by default) -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="modalCaption" class="caption"></div>
+            </div>
             </div>
         </div>
-
+        <script src="scripts.js"></script>
+    
     </body>
     <footer><div class="copyright">
         © 2025 Countdown Grabowsee, all images are copyrighted by the artists and the community of grabowsee, please do not use without permission or consent.

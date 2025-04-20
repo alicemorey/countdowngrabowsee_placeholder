@@ -1,4 +1,3 @@
-<script>
 function openModal(imageSrc, captionText) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
@@ -12,4 +11,3 @@ function openModal(imageSrc, captionText) {
 function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
-</script>

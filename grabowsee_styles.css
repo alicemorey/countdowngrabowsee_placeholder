@@ -161,6 +161,10 @@ h1 {
     color:purple;
 }
 
+.archive-text h2::before {
+    content: "📅  ";
+  }
+
 .archive-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -193,8 +197,14 @@ h1 {
 .about-container p {
     color: #333; /* Darker text color for readability */
     line-height: 1.6; /* Adds space between lines for better readability */
-    font-size: 1.1rem; /* Adjust font size */
+    font-size: 15px; /* Adjust font size */
+    padding:10px;
 }
+
+.about-container p::before {
+    content: "✨ ";
+  }
+  
 footer {
     position: fixed;
     bottom: 0;
@@ -217,7 +227,7 @@ footer {
     left: 0; top: 0;
     width: 100%; height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* dark background */
+    background-color: rgba(136, 193, 197, 0.8); /* dark background */
   }
   
   /* Modal image */
@@ -232,8 +242,8 @@ footer {
   /* Caption text */
   .caption {
     text-align: center;
-    color: #fff;
-    font-size: 1.2rem;
+    color: #333;
+    font-size: 14px;
     padding: 10px;
   }
   
