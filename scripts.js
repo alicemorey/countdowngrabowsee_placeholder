@@ -12,6 +12,12 @@ function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
 
+// Function to close date modal
+function closeDateModal() {
+  document.getElementById('dateModal').style.display = 'none';
+}
+
+
 function openDateModal(title, data) {
   const modal = document.getElementById('dateModal');
   const modalContent = document.getElementById('dateModalContent');
