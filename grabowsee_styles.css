@@ -258,7 +258,7 @@ footer {
   
   /* Close button */
   .close {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 35px;
     color: #fff;
@@ -266,6 +266,41 @@ footer {
     font-weight: bold;
     cursor: pointer;
   }
+
+  .date-modal-content {
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    margin: 5vh auto;
+    border-radius: 5px;
+    text-align: left;
+    max-height: 80vh; /* Limit content height */
+    overflow-y: auto; /* Enable scrolling within the content area */
+    position: relative;
+}
+
+#dateModalTitle {
+    margin-top: 0;
+    color: #333;
+}
+
+#dateModalDescription {
+    line-height: 1.6;
+}
+
+.modal-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.modal-list li {
+    margin-bottom: 5px;
+    break-inside: avoid;
+}
+
   
   .floating-button {
     position: fixed; /* Fixes the button to the screen */
