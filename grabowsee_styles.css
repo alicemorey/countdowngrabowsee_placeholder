@@ -178,6 +178,7 @@ h1 {
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 /* Optional hover effect */
