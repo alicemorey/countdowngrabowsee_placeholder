@@ -114,13 +114,37 @@
             <!--2023-->
     
                     <div class="archive-text">
-                        <h2>2023 <span class="info-icon" 
-                            onclick="openDateModal('2023/ TIDES', '')">ⓘ</span></h2>
+                        <h2>2023 <span class="info-icon" onclick="openDateModal('2023/ TIDES', 
+                            {
+                                month: 'AUGUST',
+                                participants: [
+                                    'Andy Ozbolt', 'Liviu Bulea', 'Michael Laundry', 'Leander Jones', 'Jele Mensen',
+                                    'Juliana Napier', 'Will Barnard', 'Annie Mo Kjellberg', 'Lukas Klein', 'Maria Séçio',
+                                    'Sebastian Steins', 'Susana Oteiza', 'Nick Saalfeld', 'Tim Dalzell', 'Lisa Violetta Gaß',
+                                    'Liav Gabay', 'Tabea Lara Ngozi Briggs', 'Ed James Harding', 'Daniel Brennan', 'Jill Kiddon',
+                                    'Ebb Bayley', 'Anna Vlassova-Longworth', 'Régis Lemberthe', 'Benjamin Whitehill', 'Alix Lhoumeau',
+                                    'Solène Arbel', 'Alice Heneghan', 'Aisling Marnane', 'Greta Buitkute', 'Maximilian Küster',
+                                    'Janberk Turan', 'Lisa Fabian', 'Eddie Brooks', 'Kién Denier', 'Çağdaş Sarı',
+                                    'Matt Robin', 'Aenne Lydia Bladt', 'Nishmi', 'Jonathan Batomene Braun', 'Paula Gomez de Caso Villar',
+                                    'Ivana Kekic', 'Domenico Laterza', 'Stefan Endewardt', 'Joseph Summers', 'Peter Bloor',
+                                    'Tabitha Wykeham', 'Nkech Nwokolo', 'Julie Teuber', 'Diane Barbé', 'Gilbert Sinnott',
+                                    'Paola Bascón', 'Arabella Hope & Kito Colchester', 'Aimée Phillips', 'Sarah Allada', 'Mia Oak',
+                                    'Rocco Ruglio-Misurell', 'Mireya Heider de Jahnsen', 'Benjamin Gregory', 'Jessica Garfield',
+                                    'Viktoria Szaboova', 'Benjamin Thomas', 'Noemi Baumblatt', 'Filipe Pirl', 'Alfie Sellers',
+                                    'Nina Läuger', 'Elisabeth Wilke', 'Paul Jokisch', 'Therese Friedemann',
+                                    'Magdalena Zagorski & Maxim Schmidthals'
+                                ],
+                                team: [
+                                    'Alice Morey', 'Philip Schrader', 'Rob Blake', 'Gustav Kleinschmidt',
+                                    'Zu Kalinowska', 'Emilie Kleinschmidt', 'Andreas Werner', 'Tine Nedbo', 
+                                    'Maitane Midby', 'Toby Saunders', 'Rachel Margetts', 'Samuel Weikopf'
+                                ]
+                            })">ⓘ</span></h2>
                     </div>
 
             <div class="archive-grid">
                 <div class="archive-item" onclick="openModal('images/archive2023/DSC01100.webp')">
-                    <img src="images/archive2023/DSC01100.webp" alt="" loading="lazy">
+                    <img rel="preload" src="images/archive2023/DSC01100.webp" alt="" loading="lazy">
                 </div>
                 <div class="archive-item" onclick="openModal('images/archive2023/DSC01473.webp', '')">
                     <img src="images/archive2023/DSC01473.webp" alt="" loading="lazy">
@@ -249,7 +273,7 @@
                 </div>
 
                 <div class="archive-item" onclick="openModal('images/archive2022/')">
-                    <img src="images/archive2022/NadiaD'Alessio_2 copy 2.webp" alt="" loading="lazy">
+                    <img src="images/archive2022/NadiaD'Alessio_2.webp" alt="" loading="lazy">
                 </div>
 
                 <div class="archive-item" onclick="openModal('images/archive2022/HannahTurnerDuffin_2.webp', 'work by Hannah Turner Duffin')">
