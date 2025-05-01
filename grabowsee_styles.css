@@ -13,7 +13,7 @@ body {
             rgba(255, 255, 255, 0.8), /* semi-transparent white */
             rgba(255, 255, 255, 0.8) /* semi-transparent white */
         ), 
-        url('images/DSC09932.JPG'); /* your actual background image */
+        url('images/backgroundGrabowsee.webp'); /* your actual background image */
         
 
     background-size: cover;        /* Makes it fill the screen */
