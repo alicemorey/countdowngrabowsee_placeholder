@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px; /* or however tall your footer is */
@@ -53,6 +54,7 @@ a:hover {
     color:red;
 }
 
+
 header.header {
     display: flex;
     flex-direction: column;
@@ -94,6 +96,7 @@ h1 {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 5px;
 }
@@ -133,21 +136,33 @@ h1 {
 }
 
 /* Add emojis based on href attribute */
-.nav-menu a[href="about.html"]::before {
-    content: "🔍 ";
+.nav-menu li {
+    list-style: none;
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-left: 1.5em; /* space for the emoji */
 }
 
-.nav-menu a[href="contact.html"]::before {
-    content: "✉️ ";
+/* Use attribute selectors to match the href inside the li */
+.nav-menu li:has(a[href="about.html"])::before {
+    content: "🔍";
+}
+.nav-menu li:has(a[href="contact.html"])::before {
+    content: "✉️";
+}
+.nav-menu li:has(a[href="opencall.html"])::before {
+    content: "🎨";
+}
+.nav-menu li:has(a[href="archive.html"])::before {
+    content: "📦";
 }
 
-.nav-menu a[href="opencall.html"]::before {
-    content: "🎨 ";
+.nav-menu li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.nav-menu a[href="archive.html"]::before {
-    content: "📦 ";
-}
 .archive-container {
     width: 90%;
     max-width: 950px;
@@ -190,8 +205,8 @@ h1 {
     background-color: rgba(123, 130, 126, 0.6); /* Lightly transparent purple */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Space inside the box */
-    margin: 20px; /* Optional: space around the box */
-    width: 60%; /* Adjust as needed */
+    margin: 20px auto; /* center horizontally */
+    width: 70%; /* Adjust as needed */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
 }
 
@@ -209,7 +224,7 @@ h1 {
   .header{
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 100%;
     height: auto;
     margin-bottom: 2rem; /* optional spacing below image */
   }
