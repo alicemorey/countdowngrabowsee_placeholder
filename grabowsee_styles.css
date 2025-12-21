@@ -42,7 +42,7 @@ ul {
 
 ul a{
     text-decoration: none;
-    color: purple;
+    color: rgb(126, 123, 126);
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
@@ -60,8 +60,8 @@ header.header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 
 /* Logo styling */
@@ -169,7 +169,7 @@ h1 {
 .archive-container {
     width: 90%;
     max-width: 950px;
-    margin: 60px auto;
+    margin: 20px auto;
 }
 
 .archive-text h2 {
@@ -236,7 +236,7 @@ h1 {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    margin-bottom: 2rem; /* optional spacing below image */
+    
   }
 
 footer {
