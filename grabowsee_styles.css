@@ -1,3 +1,24 @@
+:root {
+   font-family: 'Verdana', sans-serif;
+    --bg:rgb(216, 213, 216);
+    --hover: rgb(94, 175, 245);
+    --about:  rgba(123, 130, 126, 0.6);
+    --cream: #f6f3ef;
+    --cream-transparent: rgba(224, 216, 205, 0.7); /* 70% opacity */
+    --yellow: #cdbc59;
+    --moss: #6D946F;
+    --sky:   #A3C6DE;
+    --skyop: rgba(163, 198, 222, 0.7); /* 70% opacity */
+    --pinky: #d5a284;
+    --pinky-transparent: rgba(213, 162, 132, 0.7); /* 70% opacity */
+    --soft-sage: #A3C6DE;
+    --warm-beige: #E0D8CD;
+    --deep-forest: #4B6573;
+    --soft-cream: #F4F1E1;
+  }
+
+
+
 body {
     font-size: 16px;
     font-family: 'Verdana', sans-serif;
@@ -143,6 +164,15 @@ h1 {
     position: relative;
 }
 
+.poster-image {
+    display: block;
+    margin: 0 auto 25px auto;
+    max-width: 400px;   /* controls poster size */
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
 /* Use attribute selectors to match the href inside the li 
 .nav-menu li:has(a[href="about.html"])::before {
     content: "🔍";
@@ -205,6 +235,58 @@ h1 {
     aspect-ratio: 4 / 3; /* optional */
   }
 
+  /* about section*/
+  h3 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.intro {
+    font-size: 17px;
+}
+
+ul {
+    margin: 10px 0 20px 20px;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.camp-text {
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-left: 4px solid var(--pinky);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.55);
+    font-style: italic;
+}
+
+.camp-text p {
+    margin-bottom: 12px;
+}
+
+.camp-quote {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.camp-ending {
+    text-align: right;
+}
+
+.note {
+    margin: 25px 0;
+    font-style: italic;
+}
+
+.closing {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
 
 /* Optional hover effect */
 .archive-item img:hover {
@@ -212,25 +294,50 @@ h1 {
 }
 
 .about-container {
-    background-color: rgba(123, 130, 126, 0.6); /* Lightly transparent purple */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Space inside the box */
-    margin: 20px auto; /* center horizontally */
-    width: 70%; /* Adjust as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    background-color:  rgba(123, 130, 126, 0.6);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    padding: 35px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 750px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .about-container p {
-    color: #333; /* Darker text color for readability */
-    line-height: 1.6; /* Adds space between lines for better readability */
-    font-size: 15px; /* Adjust font size */
-    padding:7px;
+    color: #222;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
-.about-container p::before {
-    content: "✨ ";
-  }
 
+.about-container a {
+    color: #1c6dd0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-container a:hover {
+    text-decoration: underline;
+}
+
+.about-container h2{
+    margin-top:30px;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.team-list{
+    list-style:none;
+    padding:0;
+    margin-top:10px;
+    columns:2;
+}
+
+.team-list li{
+    margin-bottom:6px;
+}
   .header{
     display: block;
     margin: 0 auto;
